@@ -24,4 +24,10 @@ public class PersonnelServiceImpl implements  PersonnelService{
 
 
     }
+
+    @Override
+    public void desaffecterPerDuRay(long idPer) {
+        Personnel p = personelRepository.findById(idPer).get();
+        
+    }
 }
